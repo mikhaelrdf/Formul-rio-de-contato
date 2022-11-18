@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-box{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.form-box .form-box-img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box .form-box-text{
+   width: 50%;
+   margin: 10px 40px; 
+}
+
+.form-box .form-input {
+    margin: 20px 0;
+}
+
+form h2 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 2px solid #ffd191;
+    padding-bottom: 10px;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 0 8px;
+    height: 40px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 18px;
+    background-color: white;
+    transition: 0.7s;
+    border-radius: 12px;
+}
+
+.form-input input:focus {
+    border-color: #ffd191;
+}
+
+.form-input textarea{
+    width: 100%;
+    height: 180px;
+    border: 1px solid transparent;
+    background-color: rgba(241, 241, 241);
+    padding: 13px;
+    outline: none;
+    font-size: 18px;
+    transition: 2.6s;
+    border-radius: 10px;
+    border-color:#ffd191 ;
+}
+
+.form-input input[type="submit"]{
+    border: none;
+    background-color: #d5d541;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.form-input input[type="submit"]:focus{
+    background-color:#f7ff03;
+}
+
+.form-input input[type="submit"]:houver{
+    background-color:#fff822;
+}
+
+@media (max-width:800px){
+    .form-box .form-box-img{
+        display: none;
+    }
+    .form-box .form-box-text{
+        width: 100%;
+    }
+}
